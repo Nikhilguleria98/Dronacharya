@@ -1,8 +1,20 @@
 {
   "name": "client",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "homepage": "https://github.com/Nikhilguleria98/Dronacharya#readme",
+  "bugs": {
+    "url": "https://github.com/Nikhilguleria98/Dronacharya/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikhilguleria98/Dronacharya.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,6 +26,7 @@
     "lucide-react": "^1.22.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1",
     "tailwindcss": "^4.3.2"
   },
   "devDependencies": {
