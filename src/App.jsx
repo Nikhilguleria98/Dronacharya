@@ -7,6 +7,8 @@ import VisionMission from './Comp/Localcomp/about-us/vision_mission'
 import AboutUsCollege from './Comp/Localcomp/about-us/college'
 import CollegeNavbar from './Comp/Globalcomp/Navbar'
 import ObjFeat from './Comp/Localcomp/about-us/ObjFeat'
+import Downloads from './Comp/Localcomp/about-us/Downloads'
+import ManagementHero from './Comp/Localcomp/about-us-management/managementHero'
 const App = () => {
   return (
     <BrowserRouter>
@@ -18,6 +20,8 @@ const App = () => {
         <Route path='/about-us/college' element={<AboutUsCollege />} />
         <Route path='/about-us/vission-mission' element={<VisionMission />} />
         <Route path='/about-us/obj-feat' element={<ObjFeat />} />
+        <Route path='/about-us/downloads' element={<Downloads />}  />
+        <Route path='/about-us-management/managementHero' element={<ManagementHero />} />
       </Routes>
     </BrowserRouter>
   )

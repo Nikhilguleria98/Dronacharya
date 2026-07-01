@@ -1,34 +1,61 @@
-import React from 'react'
+import React from "react";
 
 const AboutUsCollege = () => {
   return (
     <div>
       {/* Banner */}
-      <div className="w-360 h-70">
-        <h1>About Us</h1>
-      </div>
+      <section className="w-full h-48 sm:h-64 md:h-80 lg:h-96 bg-black/40 flex items-center justify-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white font-[Nunito]">
+          About Us
+        </h1>
+      </section>
+
       {/* Intro */}
-      <div>
-        <h2 className="text-[52px] leading-15 font-bold text-center font-[Nunito]">About<span>Us</span> </h2>
-        <p className="font-[Montserrat] font-normal text-[16px] leading-6 text-center">Dronacharya PG College of Education,Rait has been established under the auspices of OCEAN Society
-          and founded in the name of great teacher of the age, Guru Dronacharya in the year 2006. Dronacharya
-          P.G. College of Education, Rait has made an enviable reputation for cutting-edge learning in academic and
-          co-academic skills through its commitment to innovative and student-friendly initiatives. The college is
-          proud to be an integral part of the picturesque surroundings in truly enchanting Kangra Valley in the lap
-          of snow clad Dhauladhars. It is situated on NH-154 at Rait, Kangra (H.P). on Mandi-Pathankot National Highway. It is 8 kms from
-          Kangra Airport, 20 kms from Kangra Railway Station and 20 kms from the hill station, Dharamshala.
-          The College is self financed, non-aided educational institution managed by OCEAN Society.
-          Dronacharya P. G. College of Education,Rait is affiliated to H.P University, Shimla and recognized by NCTE
-          and by UGC under section 2(f) of UGC Act 1956. The institution is the youngest college in the entire state
-          of Himachal Pradesh to be graded by ‘NAAC’ with ‘B’ Grade and has intake of 200 seats in B.Ed., 50 Seats in M.Ed. Course,
-          three professional courses BBA,BCA and PGDCA are affiliated to H.P University. Dronacharya P.G. College of Education is a place
-          “Where knowledge is created, not just communicated”. The college believes that promotion of human values and student wellbeing
-          is the platform for success in life. Teaching for wellbeing at Dronacharya college involves the principles of Positive Education,
-          where our focus is on developing the skills for academic achievement alongside building skills to support lifelong well being.</p>
-      </div>
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center font-[Nunito] mb-6">
+          About <span className="text-[#D4600A]">Us</span>
+        </h2>
 
+        <p className="font-[Montserrat] text-base md:text-lg leading-7 md:leading-8 text-center text-[#757A79]">
+          Dronacharya PG College of Education, Rait has been established under the
+          auspices of OCEAN Society and founded in the name of the great teacher,
+          Guru Dronacharya, in the year 2006. Dronacharya P.G. College of
+          Education, Rait has made an enviable reputation for cutting-edge learning
+          in academic and co-academic skills through its commitment to innovative
+          and student-friendly initiatives.
+
+          <br />
+          <br />
+
+          The college is proud to be an integral part of the picturesque
+          surroundings in the enchanting Kangra Valley in the lap of the
+          snow-clad Dhauladhars. It is situated on NH-154 at Rait, Kangra
+          (Himachal Pradesh), on the Mandi–Pathankot National Highway. It is
+          located 8 km from Kangra Airport, 20 km from Kangra Railway Station,
+          and 20 km from Dharamshala.
+
+          <br />
+          <br />
+
+          The college is a self-financed, non-aided educational institution
+          managed by OCEAN Society. It is affiliated with H.P. University,
+          Shimla, recognized by NCTE and UGC under Section 2(f) of the UGC Act,
+          1956. It is the youngest college in Himachal Pradesh to receive a
+          NAAC 'B' Grade accreditation and offers B.Ed., M.Ed., BBA, BCA, and
+          PGDCA programmes.
+
+          <br />
+          <br />
+
+          Dronacharya P.G. College of Education is a place where knowledge is
+          created, not just communicated. The college believes that promoting
+          human values and student well-being is the foundation for success in
+          life. Teaching at Dronacharya follows the principles of Positive
+          Education, combining academic excellence with lifelong well-being.
+        </p>
+      </section>
     </div>
-  )
-}
+  );
+};
 
-export default AboutUsCollege
+export default AboutUsCollege;
