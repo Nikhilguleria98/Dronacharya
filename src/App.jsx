@@ -1,10 +1,9 @@
 import React from 'react'
+import Landingpage from './Pages/Landingpage'
 
 const App = () => {
   return (
-    <div className='bg-red-400'>
-      hello
-    </div>
+    <Landingpage />
   )
 }
 
