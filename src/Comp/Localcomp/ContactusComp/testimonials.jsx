@@ -3,27 +3,35 @@ import React from "react";
 const TESTIMONIALS = [
   {
     id: 1,
-    name: "Mayank",
+    name: "ABINAV",
     role: "Manager – Hyundai, Delhi",
     batch: "BBA, 2009-12",
     text: "From BBA, one of my friends got placed for Rs. 4.5 lacs pa package. For BBA, the average salary is Rs 2-4 lacs pa annually. The infrastructure is OK. It is very good. Projector-based classes. Canteen facility is there.",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&q=80",
   },
   {
     id: 2,
-    name: "Mayank",
+    name: "MAYANK",
     role: "Manager – Hyundai, Delhi",
     batch: "BBA, 2009-12",
     text: "From BBA, one of my friends got placed for Rs. 4.5 lacs pa package. For BBA, the average salary is Rs 2-4 lacs pa annually. The infrastructure is OK. It is very good. Projector-based classes. Canteen facility is there.",
-    avatar: "https://randomuser.me/api/portraits/men/44.jpg",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
   },
   {
     id: 3,
-    name: "Mayank",
+    name: "MAYANK",
     role: "Manager – Hyundai, Delhi",
     batch: "BBA, 2009-12",
     text: "From BBA, one of my friends got placed for Rs. 4.5 lacs pa package. For BBA, the average salary is Rs 2-4 lacs pa annually. The infrastructure is OK. It is very good. Projector-based classes. Canteen facility is there.",
-    avatar: "https://randomuser.me/api/portraits/men/56.jpg",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+  },
+  {
+    id: 4,
+    name: "MAYANK",
+    role: "Manager – Hyundai, Delhi",
+    batch: "BBA, 2009-12",
+    text: "From BBA, one of my friends got placed for Rs. 4.5 lacs pa package. For BBA, the average salary is Rs 2-4 lacs pa annually. The infrastructure is OK. It is very good. Projector-based classes. Canteen facility is there.",
+    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
   },
 ];
 
@@ -45,24 +53,42 @@ function QuoteIcon() {
 
 function TestimonialCard({ name, role, batch, text, avatar }) {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg p-5 flex flex-col gap-3 shadow-sm">
-      <QuoteIcon />
-      <p className="text-gray-600 text-sm leading-relaxed">{text}</p>
-      <div className="mt-auto pt-3 border-t border-gray-100">
-        <p className="text-xs font-bold text-gray-800">{batch}</p>
-        <div className="flex items-center gap-2 mt-2">
+    <div className="flip-card h-[320px] w-full cursor-pointer">
+      <div className="flip-card-inner rounded-xl shadow-sm">
+        
+        {/* Front Side: Photo with name overlay */}
+        <div className="flip-card-front shadow-md">
           <img
             src={avatar}
             alt={name}
-            className="w-8 h-8 rounded-full object-cover border border-gray-200"
+            className="w-full h-full object-cover"
           />
-          <div>
-            <p className="text-xs font-bold text-[#e87c2a] uppercase tracking-wide">
-              {name}
-            </p>
-            <p className="text-[11px] text-gray-500">{role}</p>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent flex flex-col justify-end p-4">
+            <p className="text-white font-bold text-sm">{name}</p>
+            <p className="text-gray-300 text-[11px]">{role}</p>
+            <p className="text-orange-400 text-xs font-bold mt-1">{batch}</p>
           </div>
         </div>
+
+        {/* Back Side: Testimonial sentences (light background) */}
+        <div className="flip-card-back bg-[#f0f4ff] text-slate-800 p-5 flex flex-col justify-between shadow-md border border-blue-100">
+          <QuoteIcon />
+          <p className="text-xs text-slate-600 leading-relaxed overflow-y-auto max-h-[160px] custom-scrollbar">
+            {text}
+          </p>
+          <div className="border-t border-blue-200/50 pt-3 flex items-center gap-2 mt-auto">
+            <img
+              src={avatar}
+              alt={name}
+              className="w-8 h-8 rounded-full object-cover border border-blue-100"
+            />
+            <div>
+              <p className="text-xs font-bold uppercase text-[#e87c2a]">{name}</p>
+              <p className="text-[10px] text-slate-500">{role}</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   );
@@ -77,20 +103,6 @@ const Testimonials = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {/* Featured card (large left with photo) */}
-          <div className="lg:col-span-1 bg-[#0d1b4c] rounded-lg overflow-hidden shadow-md relative min-h-[220px]">
-            <img
-              src="https://randomuser.me/api/portraits/men/75.jpg"
-              alt="Abinav"
-              className="w-full h-full object-cover opacity-70 absolute inset-0"
-            />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#0d1b4c] to-transparent p-4">
-              <p className="text-white font-bold text-sm">ABINAV</p>
-              <p className="text-gray-300 text-xs">Manager – Hyundai, Delhi</p>
-            </div>
-          </div>
-
-          {/* 3 testimonial text cards */}
           {TESTIMONIALS.map((t) => (
             <TestimonialCard key={t.id} {...t} />
           ))}
