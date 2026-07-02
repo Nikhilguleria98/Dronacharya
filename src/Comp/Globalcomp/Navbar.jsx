@@ -32,9 +32,12 @@ const NAV_LINKS = [
     label: "Our Staff",
     href: "/our-staff",
     children: [
-      { label: "Teaching Staff", href: "/our-staff/teaching" },
-      { label: "Non-Teaching Staff", href: "/our-staff/non-teaching" },
-      { label: "Departments", href: "/our-staff/departments" },
+      { label: "M.Ed. Staff", href: "/our-staff/med" },
+      { label: "B.Ed. Staff", href: "/our-staff/bed" },
+      { label: "B.Com. Staff", href: "/our-staff/bcom" },
+       { label: "BBA Staff", href: "/our-staff/bba" },
+        { label: "BCA Staff", href: "/our-staff/bca" },
+         { label: "Administrative Staff", href: "/our-staff/administrative" }
     ],
   },
   {

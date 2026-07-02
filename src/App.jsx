@@ -13,6 +13,12 @@ import Footer from './Comp/Globalcomp/Footer'
 import AboutUsManagement from './Pages/AboutUsManagementPage'
 import AboutUsOrganogram from './Pages/AboutUsOrganogram'
 import MandatoryDisclosure from './Pages/MandatoryDisclosure'
+import MedStaff from './Pages/staff/MedStaff'
+import BedStaff from './Pages/staff/BedStaff'
+import BcomStaff from './Pages/staff/BcomStaff'
+import BcaStaff from './Pages/staff/BcaStaff'
+import BbaStaff from './Pages/staff/BbaStaff'
+import AdministrativeStaff from './Pages/staff/AdministrativeStaff'
 
 const App = () => {
   return (
@@ -49,6 +55,32 @@ const App = () => {
           element={<MastersOfEducation />}
         />
         
+        //Staff pages
+         <Route
+          path="/our-staff/med"
+          element={<MedStaff/>}
+        />
+        <Route
+          path="/our-staff/bed"
+          element={<BedStaff/>}
+        />
+        <Route
+          path="/our-staff/bcom"
+          element={<BcomStaff/>}
+        />
+        <Route
+          path="/our-staff/bca"
+          element={<BcaStaff/>}
+        />
+        <Route
+          path="/our-staff/bba"
+          element={<BbaStaff/>}
+        />
+        <Route
+          path="/our-staff/Administration"
+          element={<AdministrativeStaff/>}
+        />
+
       </Routes>
       <Footer />
     </BrowserRouter>
