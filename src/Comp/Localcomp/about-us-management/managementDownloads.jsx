@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Downloads() {
+export default function ManagementDownloads() {
   const [downloads] = useState([
     {
       id: 1,
