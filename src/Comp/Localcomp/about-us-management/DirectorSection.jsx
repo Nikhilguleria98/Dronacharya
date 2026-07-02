@@ -4,7 +4,7 @@ import { directorsData } from "./Directors";
 
 const DirectorsSection = () => {
   return (
-    <section className="w-full max-w-[1440px] min-h-[845.65px] mx-auto bg-[#EDF3FF] px-5 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[100px] flex flex-col gap-[10px]">
+    <section className="w-full max-w-full min-h-[845.65px] mx-auto bg-[#EDF3FF] px-5 sm:px-8 lg:px-[60px] py-12 sm:py-16 lg:py-[100px] flex flex-col gap-[10px]">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
