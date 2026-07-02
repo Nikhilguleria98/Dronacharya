@@ -8,9 +8,7 @@ import Footer from "../Comp/Globalcomp/Footer";
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen w-full bg-white font-sans">
-      {/* Navbar */}
-      <CollegeNavbar activePath="/contact-us" />
+    <>
 
       {/* Section 1: Google Map */}
       <MapSection />
@@ -23,10 +21,7 @@ const ContactPage = () => {
 
       {/* Section 4: Downloads */}
       <Downloads />
-
-      {/* Global Footer */}
-      <Footer />
-    </div>
+</>
   );
 };
 

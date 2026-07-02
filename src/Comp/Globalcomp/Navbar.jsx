@@ -38,14 +38,24 @@ const NAV_LINKS = [
     ],
   },
   {
-    label: "Clubs",
-    href: "/clubs",
-    children: [
-      { label: "NCC", href: "/clubs/ncc" },
-      { label: "NSS", href: "/clubs/nss" },
-      { label: "Cultural Club", href: "/clubs/cultural" },
-      { label: "Sports Club", href: "/clubs/sports" },
-    ],
+  label: "Clubs",
+  children: [
+    { label: "SWAT Club", href: "/clubs/swat-club" },
+    { label: "Manthan Club", href: "/clubs/manthan-club" },
+    { label: "Training & Development Cell", href: "/clubs/training-development-cell" },
+    { label: "SANJEEVANI CLUB", href: "/clubs/sanjeevani-club" },
+    { label: "DHAULADHAR ECO CLUB", href: "/clubs/dhauladhar-eco-club" },
+    { label: "CULTURAL CLUB", href: "/clubs/cultural-club" },
+    { label: "RED RIBBON CLUB", href: "/clubs/red-ribbon-club" },
+    { label: "ICC(Internal Complaint Committee)", href: "/clubs/icc" },
+    { label: "ELAN CLUB", href: "/clubs/elan-club" },
+    { label: "PTA (Parents Teacher Association)", href: "/clubs/pta" },
+    { label: "Alumni Association", href: "/clubs/alumni-association" },
+    { label: "Rotaract Club", href: "/clubs/rotaract-club" },
+    { label: "Rover and Ranger Club", href: "/clubs/rover-and-ranger-club" },
+    { label: "Health and Hygiene Club", href: "/clubs/health-and-hygiene-club" },
+    { label: "Sang Bequest Club", href: "/clubs/sang-bequest-club" }
+  ]
   },
   {
     label: "IQAC",
