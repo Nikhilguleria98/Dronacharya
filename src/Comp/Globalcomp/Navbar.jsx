@@ -13,11 +13,8 @@ const NAV_LINKS = [
     label: "About Us",
     href: "/about-us",
     children: [
-      { label: "About the College", href: "/about-us/college" },
-      { label: "Vision & Mission", href: "/about-us/vision-mission" },
-      { label: "Principal's Message", href: "/about-us/principal-message" },
-      { label: "Governing Body", href: "/about-us/governing-body" },
-      { label: "History", href: "/about-us/history" },
+      { label: "Management", href: "/about-us-management" },
+      { label: "Organogram", href: "/about-us-organogram" },
     ],
   },
   { label: "Mandatory Disclosure", href: "/mandatory-disclosure" },

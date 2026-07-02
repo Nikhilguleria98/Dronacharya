@@ -1,5 +1,5 @@
-import bsp from "./directorsImg/bsp.png";
-import gsp from "./directorsImg/gsp.png";
+import bsp from "../../assets/directorsImg/bsp.png";
+import gsp from "../../assets/directorsImg/gsp.png";
 export const directorsData = [
     {
       id: 1,

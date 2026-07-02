@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from './courseComponents/Hero'
-import Section2 from './courseComponents/Section2'
+import Hero from '../../Comp/Localcomp/Courses/courseComponents/Hero'
+import Section2 from '../../Comp/Localcomp/Courses/courseComponents/Section2'
 
 const BachelorsofEducation = () => {
   return (
