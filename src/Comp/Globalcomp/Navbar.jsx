@@ -25,7 +25,7 @@ const NAV_LINKS = [
     label: "Courses",
     href: "/courses",
     children: [
-      { label: "Undergraduate Programs", href: "/courses/undergraduate" },
+      { label: "Bachelors of Education", href: "/courses/bachelors-of-education" },
       { label: "Postgraduate Programs", href: "/courses/postgraduate" },
       { label: "Diploma Courses", href: "/courses/diploma" },
       { label: "Admission Process", href: "/courses/admission" },
