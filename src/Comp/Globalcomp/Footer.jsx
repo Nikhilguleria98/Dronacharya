@@ -6,17 +6,18 @@ import Copyright from "./FooterComp/copyright";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#f8faff] border-t border-gray-200 pt-10 pb-4 px-4 sm:px-8 lg:px-16 text-slate-700">
+    <footer className="bg-slate-50 py-10 px-4 sm:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
-        {/* One big container wrapping the columns */}
-        <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
-          <QuickLinks />
-          <ExternalLinks />
-          <ContactInfo />
-        </div>
+        {/* One big container card with navy border wrapping columns and copyright */}
+        <div className="bg-white border-2 border-[#0d1b4c] rounded-3xl p-8 md:p-12 shadow-sm flex flex-col gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <QuickLinks />
+            <ExternalLinks />
+            <ContactInfo />
+          </div>
 
-        {/* Copyright at the bottom */}
-        <Copyright />
+          <Copyright />
+        </div>
       </div>
     </footer>
   );
