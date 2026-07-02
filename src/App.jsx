@@ -6,6 +6,7 @@ import AboutUs from './Pages/AboutUsPage'
 import CollegeNavbar from './Comp/Globalcomp/Navbar'
 import AboutUsManagement from './Pages/AboutUsManagementPage'
 import OrganogramHero from './Comp/Localcomp/about-us-organogram/organogramHero'
+import Footer from './Comp/Globalcomp/Footer'
 const App = () => {
   return (
     <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/about-us-management' element={<AboutUsManagement />} />
         <Route path='about-us-organogram' element={<OrganogramHero />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
