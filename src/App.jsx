@@ -12,6 +12,7 @@ import MastersOfEducation from "./Pages/courses/MastersOfEducation";
 import Footer from './Comp/Globalcomp/Footer'
 import AboutUsManagement from './Pages/AboutUsManagementPage'
 import AboutUsOrganogram from './Pages/AboutUsOrganogram'
+import MandatoryDisclosure from './Pages/MandatoryDisclosure'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/about-us-management" element={<AboutUsManagement />} />
          <Route path="/about-us-organogram" element={<AboutUsOrganogram />} />
+         <Route path='/mandatory-disclosure' element={<MandatoryDisclosure />} />
         <Route
           path="/courses/bachelors-of-business-administration"
           element={<BachelorsOfBuisnessAdministration />}
@@ -46,6 +48,7 @@ const App = () => {
           path="/courses/masters-of-education"
           element={<MastersOfEducation />}
         />
+        
       </Routes>
       <Footer />
     </BrowserRouter>
