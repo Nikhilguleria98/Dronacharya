@@ -1,6 +1,6 @@
 import React from 'react'
 
-const governing_body = () => {
+const AboutUsOrganogram = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const governing_body = () => {
   )
 }
 
-export default governing_body
+export default AboutUsOrganogram
